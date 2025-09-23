@@ -24,6 +24,7 @@ COPY --from=builder /app/target/*.jar app.jar
 
 EXPOSE 9090
 EXPOSE 5005
+EXPOSE 9091
 
 ENV JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"
 

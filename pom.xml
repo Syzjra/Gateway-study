@@ -44,8 +44,15 @@
 			<artifactId>spring-cloud-starter-contract-stub-runner</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!--ACTUATOR-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 	</dependencies>
 
+	<!--Override dependencys for security reasons-->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
