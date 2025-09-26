@@ -31,9 +31,9 @@ public class GatewayApplication {
 				.build();
 	}
 
-	@GetMapping("/fallback")
-	public Mono<String> fallback() {
-		return Mono.just("fallback");
-	}
+//	@GetMapping("/fallback")
+//	public Mono<String> fallback() {
+//		return Mono.just("fallback");
+//	}
 }
 

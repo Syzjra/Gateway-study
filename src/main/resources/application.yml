@@ -1,7 +1,10 @@
 spring:
   application:
     name: gateway
-
+  boot:
+    admin:
+      client:
+        url: http://host.docker.internal:9092
 server:
   port: 9090
 
@@ -9,3 +12,10 @@ management:
   server:
     port: 9091
     address: 0.0.0.0
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
